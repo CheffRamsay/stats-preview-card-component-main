@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lexend+Deca:wght@100;200;300;400;500&family=Lexend:wght@100;200;300;400&display=swap');
+
+:root{
+    --background-color-main: #090B1A;
+    --background-color-card: #1B1938;
+    --font-color: #ffff;
+    
+}
+
+body{
+    background-color: var(--background-color-main);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color-card);
+    margin: 50px 20px 50px 20px;
+    border-radius: 5px;
+}
+
+
+section img{
+   width: 100%;
+   border-radius: 5px;
+ 
+}
+
+.text-contain{
+    padding: 0 20px 30px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 26px;
+    color: var(--font-color);
+}
+
+span{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: var(--font-color);
+}
+
+.list{
+    list-style-type: none; 
+    padding: 0px;
+}
+
+.list li p{
+    font-family: 'Lexend', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-bottom: 0px;
+}
+
+.list li span{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 100;
+}
+
+.img-desktop{
+   display: none;
+}
+
+@media (min-width: 800px) {
+  body{
+      background-color: var(--background-color-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 120px;
+     
+  }
+
+  .img-mobile{
+      display: none;
+  }
+
+  .img-desktop{
+      display: block;
+      max-width: 490px;
+  }
+
+  section{
+      flex-direction: row-reverse;
+      position: relative;
+      top: 70px;
+      max-width: 1000px;
+    
+  }
+
+  .text-contain{
+      padding-left: 60px;
+  }
+
+  .list{
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+  }
+
+  h4{
+      text-align: left;   
+      max-width: 75%;
+  }
+
+  .span-container{
+      text-align: left;
+      max-width:70%;
+  }
+
+  .span-container span{
+      line-height: 25px;
+  }
+
+  .list li p{
+      text-align: left;
+      
+  }
+
+ 
+}
+
+.attribution { font-size: 11px; text-align: center; color: aliceblue; }
+.attribution a { color: hsl(228, 45%, 44%); }
